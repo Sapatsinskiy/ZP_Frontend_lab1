@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            padding: 20px;
+            background-color: white;
+            border: 1px solid grey;
+            border-radius: 8px;
+            width: 420px;
+        }
+        div[style] {
+            margin-bottom: 20px;
+        }
+        form div {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 2px solid grey;
+            border-radius: 4px;
+            outline: none;
+        }
+        input:focus {
+            border-color: blue !important;
+        }
+        input:invalid {
+            border-color: red;
+        }
+        input:valid {
+            border-color: green;
+        }
+        button {
+            margin-top: 10px;
+            width: 200px;
+            padding: 10px;
+            font-size: 16px;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: rgb(96, 96, 255);
+        }
+        [name="status"] {
+            font-size: 14px;
+            color: red;
+            display: none;
+        }
+        input:invalid + [name="status"] {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div style="font-size: 28px; text-align: center;">
+            <b>Реєстрація</b>
+        </div>
+        <form action="">
+            <div>Ім'я користувача:</div>
+            <input type="text" required>
+            <div name="status">Поле обов'язкове для заповнення</div>
+
+            <div>Адреса електронної пошти:</div>
+            <input type="email" required>
+            <div name="status">Поле обов'язкове для заповнення</div>
+
+            <div>Пароль:</div>
+            <input type="password" required>
+            <div name="status">Поле обов'язкове для заповнення</div>
+            
+            <button>Зареєструватися</button>
+        </form>
+    </div>
+</body>
+</html>

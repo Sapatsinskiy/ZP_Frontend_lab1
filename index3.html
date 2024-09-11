@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ 
+    <style>
+
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        li {
+            cursor: pointer;
+            margin: 10px; 
+            padding: 10px 15px; 
+            border-radius: 5px;
+            font-size: 16px; 
+            overflow: hidden;
+        }
+
+        li {
+            border-left: 2px solid red;
+            background: whitesmoke;
+            border-radius: 10px;
+            width: 400px;
+        }
+
+        li > ul > li {
+            border-left: 2px solid orange;
+            background: rgb(185, 185, 185);
+            margin-left: 20px;
+            width: auto;
+        }
+        li > ul > li > ul > li {
+            border-left: 2px solid yellow;
+            background: whitesmoke;
+            margin-left: 40px; 
+            width: auto;
+        }
+        ul ul {
+            display: none;
+        }
+        li:hover > ul {
+            display: block;
+        }
+    </style>
+    
+    <ul>
+        <li>Рівень 1, Елемент 1
+            <ul>
+                <li>Рівень 2, Елемент 1
+                    <ul>
+                        <li>Рівень 3, Елемент 1</li>
+                        <li>Рівень 3, Елемент 2</li>
+                    </ul>
+                </li>
+                <li>Рівень 2, Елемент 2
+                    <ul>
+                        <li>Рівень 3, Елемент 3</li>
+                        <li>Рівень 3, Елемент 4</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Рівень 1, Елемент 2
+            <ul>
+                <li>Рівень 2, Елемент 3
+                    <ul>
+                        <li>Рівень 3, Елемент 1</li>
+                        <li>Рівень 3, Елемент 2</li>
+                    </ul>
+                </li>
+                <li>Рівень 2, Елемент 4
+                    <ul>
+                        <li>Рівень 3, Елемент 3</li>
+                        <li>Рівень 3, Елемент 4</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+       
+    
+</body>
+</html>
